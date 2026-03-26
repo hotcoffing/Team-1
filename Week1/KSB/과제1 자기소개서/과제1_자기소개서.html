@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>김성빈 포트폴리오</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    h1, h2, h3, p, ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 20%;
+      background-color: white;
+    }
+
+    header h1 {
+      font-size: 24px;
+      color: #4A86FF;
+    }
+
+    header nav ul {
+      display: flex;
+      gap: 30px;
+    }
+
+    main {
+      width: 90%;
+      margin: 0 5%;
+      background-color: #F3F5FF;
+    }
+
+    #intro {
+      background-color: #4A86FF;
+      text-align: center;
+      padding: 100px 0;
+    }
+
+    #intro h2 {
+      font-size: 32px;
+      color: white;
+    }
+
+    .aboutSection {
+      text-align: center;
+      font-size: 36px;
+      color: #5d8aff;
+      padding-top: 30px;
+      padding-bottom: 40px;
+    }
+
+    #about {
+      padding: 0 5% 60px 5%;
+      display: flex;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .profile {
+      padding: 40px;
+      border-radius: 10px;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .profile img {
+      width: 150px;
+      height: 200px;
+      border-radius: 5px;
+      padding-bottom: 15px;
+    }
+
+    .profileInfo .name {
+      font-size: 20px;
+      font-weight: bold;
+      padding-bottom: 15px;
+      text-align: center;
+    }
+
+    .infoItem {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      font-size: 12px;
+      padding-bottom: 8px;
+    }
+
+    .infoItem .icon {
+      width: 16px;
+      height: 16px;
+    }
+
+    .grid {
+      flex: 1.5;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 200px 200px;
+      gap: 20px;
+    }
+
+    .gridItem {
+      padding: 10%;
+    }
+
+    .gridItem h3 {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .gridItem p {
+      font-size: 14px;
+      color: gray;
+    }
+
+    .hobby {
+      background-color: #F3F5FF;
+      padding: 60px 8% 100px 8%;
+    }
+
+    .hobby .sectionTitle {
+      text-align: center;
+      font-size: 36px;
+      color: #5d8aff;
+      font-weight: 700;
+      margin-bottom: 40px;
+      letter-spacing: 2px;
+    }
+
+    .hobby ul {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .hobby li {
+      flex: 1;
+      border-radius: 8px;
+      overflow: hidden;
+      background-color: white;
+    }
+
+    .hobbyTitle {
+      background-color: #5d8aff;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      font-size: 15px;
+    }
+
+    .hobbyContent {
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hobbyContent img {
+      max-width: 100%;
+      max-height: fit-content;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  
+  <header>
+    <h1>PORTFOLIO.</h1>
+    <nav>
+      <ul>
+        <li>ABOUT</li>
+        <li>HOBBY</li>
+        <li>CONTACT</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="intro">
+      <h2>
+        안녕하세요! <br>
+        제 이름은 김성빈 입니다. <br>
+        배워가는 개발자가 되고 싶어요.
+      </h2>
+    </section>
+
+    <section>
+      <h2 class="aboutSection">ABOUT</h2>
+      <div id="about">
+        <article class="profile">
+          <img src="./picture.png" alt="프로필 사진">
+          <div class="profileInfo">
+            <p class="name">김성빈</p>
+            <div class="infoItem">
+              <img src="./전화.png" class="icon" alt="전화">
+              <p>010-2350-2813</p>
+            </div>
+            <div class="infoItem">
+              <img src="./이메일.png" class="icon" alt="이메일">
+              <p>skuy369@hansung.ac.kr</p>
+            </div>
+            <div class="infoItem">
+              <img src="./주소.png" class="icon" alt="주소">
+              <p>경기도 의정부시 신곡동</p>
+            </div>
+          </div>
+        </article>
+        
+        <div class="grid">
+          <div class="gridItem">
+            <h3>EDUCATION</h3>
+            <p>한성대학교 컴퓨터공학부</p>
+            <p>2022.03 ~ 2028.02</p>
+          </div>
+          <div class="gridItem">
+            <h3>SKILLS</h3>
+            <p>C, Java, Unity</p>
+          </div>
+          <div class="gridItem">
+            <h3>WORK</h3>
+            <p>프론트엔드 개발자</p>
+          </div>
+          <div class="gridItem">
+            <h3>ACTIVITIES</h3>
+            <p>멋쟁이사자처럼 14기</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hobby">
+      <h2 class="sectionTitle">HOBBY</h2>
+      <ul>
+        <li>
+          <div class="hobbyTitle">게임하기</div>
+          <div class="hobbyContent">
+            <img src="./1.jpg">
+          </div>
+        </li>
+        <li>
+          <div class="hobbyTitle">농구하기</div>
+          <div class="hobbyContent">
+            <img src="./2.jpg">
+          </div>
+        </li>
+        <li>
+          <div class="hobbyTitle">유니티하기</div>
+          <div class="hobbyContent">
+            <img src="./3.jpg">
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
