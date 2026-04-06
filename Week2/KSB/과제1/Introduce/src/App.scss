@@ -1,9 +1,8 @@
-body {
-  margin: 0;
-  padding: 0;
-}
+$blue: #4A86FF;
+$lightgray: #F3F5FF;
+$lightblue: #5d8aff;
 
-h1, h2, h3, p, ul {
+body, h1, h2, h3, p, ul {
   margin: 0;
   padding: 0;
 }
@@ -22,7 +21,7 @@ header {
   h1 {
     font-size: 24px;
     font-weight: bold;
-    color: #4A86FF;
+    color: $blue;
   }
 
   nav ul {
@@ -36,11 +35,11 @@ header {
 main {
   width: 90%;
   margin: 0 5%;
-  background-color: #F3F5FF;
+  background-color: $lightgray;
 }
 
 #intro {
-  background-color: #4A86FF;
+  background-color: $blue;
   text-align: center;
   padding: 100px 0;
 
@@ -101,13 +100,13 @@ main {
 }
 
 .hobby {
-  background-color: #F3F5FF;
+  background-color: $lightgray;
   padding: 60px 8% 100px 8%;
 
   .sectionTitle {
     text-align: center;
     font-size: 36px;
-    color: #5d8aff;
+    color: $lightblue;
     font-weight: 700;
     margin-bottom: 40px;
     letter-spacing: 2px;

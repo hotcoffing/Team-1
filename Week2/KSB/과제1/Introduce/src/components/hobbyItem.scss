@@ -1,3 +1,5 @@
+$lightblue: #5d8aff;
+
 .hobbyList {
   flex: 1;
   border-radius: 8px;
@@ -6,7 +8,7 @@
 }
 
 .hobbyTitle {
-  background-color: #5d8aff;
+  background-color: $lightblue;
   color: white;
   text-align: center;
   padding: 10px 0;
