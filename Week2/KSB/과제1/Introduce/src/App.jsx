@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import './App.css'
+import './App.scss'
 import ProfileItem from './components/profileItem.jsx'
 import AboutItem from './components/aboutItem.jsx'
 import HobbyItem from './components/hobbyItem.jsx'
@@ -46,12 +46,12 @@ function App() {
           </h2>
         </section>
 
-        <section>
-          <h2 className="aboutSection">ABOUT</h2>
-          <div id="about">
+        <section className="about">
+          <h2 className="aboutTitle">ABOUT</h2>
+          <div className="aboutDetail">
             <article className="profile">
               <img src={"/assets/picture.png"} alt="프로필 사진"/>
-              <div className="profileInfo">
+              <div>
                 <p className="name">김성빈</p>
                 {profiles.map((profile) => (
                   <ProfileItem 

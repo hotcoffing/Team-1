@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20%;
+  background-color: white;
+
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4A86FF;
+  }
+
+  nav ul {
+    font-weight: bold;
+    display: flex;
+    gap: 30px;
+  }
+
+}
+
+main {
+  width: 90%;
+  margin: 0 5%;
+  background-color: #F3F5FF;
+}
+
+#intro {
+  background-color: #4A86FF;
+  text-align: center;
+  padding: 100px 0;
+
+  h2 {
+    font-size: 32px;
+    color: white;
+  }
+
+}
+
+.about {
+  .aboutDetail {
+    padding: 0 5% 60px 5%;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .aboutTitle {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #5d8aff;
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+}
+
+.profile {
+  padding: 40px;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    width: 150px;
+    height: 200px;
+    border-radius: 5px;
+    padding-bottom: 15px;
+  }
+
+  .name {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 15px;
+    text-align: center;
+  }
+}
+
+.grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 200px 200px;
+  gap: 20px;
+}
+
+.hobby {
+  background-color: #F3F5FF;
+  padding: 60px 8% 100px 8%;
+
+  .sectionTitle {
+    text-align: center;
+    font-size: 36px;
+    color: #5d8aff;
+    font-weight: 700;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+}

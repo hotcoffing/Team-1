@@ -11,6 +11,7 @@
   text-align: center;
   padding: 10px 0;
   font-size: 15px;
+  font-weight: bold;
 }
 
 .hobbyContent {
@@ -18,10 +19,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
 
-.hobbyContent img {
-  max-width: 100%;
-  max-height: fit-content;
-  border-radius: 4px;
+  img {
+    max-width: 100%;
+    max-height: fit-content;
+    border-radius: 4px;
+  }
 }

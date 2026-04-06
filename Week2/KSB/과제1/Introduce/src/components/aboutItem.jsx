@@ -1,4 +1,4 @@
-import "./aboutItem.css";
+import "./aboutItem.scss";
 
 function AboutItem({title, text}) {
     return (

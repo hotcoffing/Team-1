@@ -1,4 +1,4 @@
-import "./profileItem.css";
+import "./profileItem.scss";
 
 function ProfileItem({img, imgText, text}) {
     return (

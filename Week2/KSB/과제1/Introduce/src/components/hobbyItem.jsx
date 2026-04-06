@@ -1,4 +1,4 @@
-import "./hobbyItem.css";
+import "./hobbyItem.scss";
 
 function HobbyItem({title, img, imgText}) {
     return (
