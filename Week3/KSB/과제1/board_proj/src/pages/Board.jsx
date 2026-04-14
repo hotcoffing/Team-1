@@ -7,11 +7,12 @@ import "./Board.scss"
 function Board() {
   // 💡 실습 1. 여기에 가짜 데이터 상태(useState)를 만들게 됩니다.
   const [posts, setPosts] = useState([
-      { id: 1, title: '첫 번째 게시글', content: '안녕하세요! 이것은 첫 번째 게시글입니다.' },
-      { id: 2, title: '두 번째 게시글', content: '리액트 공부 중입니다!' },
+      { id: 1, isEdit: false, title: '첫 번째 게시글', content: '안녕하세요! 이것은 첫 번째 게시글입니다.' },
+      { id: 2, isEdit: false, title: '두 번째 게시글', content: '리액트 공부 중입니다!' },
   ]);
   
   const navigate = useNavigate();
+  const [isEdit, setIsEdit] = useState(false);
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
 
