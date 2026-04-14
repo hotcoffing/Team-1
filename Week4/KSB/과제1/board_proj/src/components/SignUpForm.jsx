@@ -48,7 +48,7 @@ function SignUpForm() {
 
     return (
         <> 
-            <div>
+            <div className="signupFrame">
                 <p>아이디</p>
                 <input 
                     id="userId" 
@@ -103,7 +103,7 @@ function SignUpForm() {
                 <br />
                 <button type="submit" onClick={handleSubmit}>가입하기</button>
             </div>
-            <p>이미 계정이 있으신가요? <Link to="/login">로그인</Link></p>
+            <p><br />이미 계정이 있으신가요? <Link to="/login">로그인</Link></p>
         </>
     )
 }
