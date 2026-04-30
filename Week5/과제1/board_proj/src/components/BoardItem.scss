@@ -1,0 +1,35 @@
+.boardItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid lightgray;
+
+    .textArea {
+        background-color: #1e1e1e;
+
+        .itemTitle {
+            text-align: left;
+            margin: 0 0 5px 0;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .itemContent {
+            margin: 0;
+            color: wheat;
+            font-size: 16px;
+        }
+    }
+    
+    .deleteBtn {
+        padding: 6px 12px 6px 12px;
+        background-color: red;
+        color: white;
+        font-size: 12px;
+        font-weight: bold;
+        border: none;
+        border-radius: 4px;
+    }
+}
