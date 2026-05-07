@@ -1,13 +1,30 @@
 import "./App.css";
 import MarkerIcon from "./assets/markerIcon.svg";
+import { useState, useEffect } from "react";
 import { Map, MapMarker } from "react-kakao-maps-sdk";
 
 function App() {
-  const location = {
-    lat: 37.582,
-    lng: 127.011,
-  };
+  // 현재 위치 가져오기 (Geolocation API)
+  const nowLocation = navigator.geolocation.getCurrentPosition((position) => {
+    doSomething(position.coords.latitude, position.coords.longitude);
+  });
   
+  // 위치 정보 상태로 관리 (기본값 : 한성대학교)
+  const [location, setLocation] = useState({
+    lat: 37.582,
+    lng: 127.011
+  });
+
+  // 시작시 초기 현재 위치 정보 업데이트
+  useEffect(() => {
+    navigator.geolocation.getCurrentPosition((position) => {
+      setLocation({
+        lat: position.coords.latitude,
+        lng: position.coords.longitude
+      });
+    });
+  }, []);
+
   const handleMapClick = (map, mouseEvent) => {
     // 클릭한 위치의 위도와 경도 정보 가져오기
     const latlng = mouseEvent.latLng;
