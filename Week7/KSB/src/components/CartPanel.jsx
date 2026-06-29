@@ -12,6 +12,15 @@ function CartPanel({ items, totalPrice, onIncrease, onDecrease, onRemove, onOrde
     onDecrease(item)
   }, [onDecrease])
 
+  // 카테고리별 합계 계산
+  const categoryTotals = useMemo(() => {
+    return items.reduce((acc, item) => {
+      const amount = item.price * item.quantity
+      acc[item.category] = (acc[item.category] || 0) + amount
+      return acc
+    }, {})
+  }, [items])
+
   return (
     <aside className="cart-panel">
       <h2>장바구니</h2>
@@ -34,6 +43,21 @@ function CartPanel({ items, totalPrice, onIncrease, onDecrease, onRemove, onOrde
             />
           ))}
         </ul>
+      )}
+
+      {/* 카테고리별 합계 표시 */}
+      {items.length > 0 && (
+        <div className="cart-panel__category-totals">
+          <h4>카테고리별 합계</h4>
+          <ul>
+            {Object.entries(categoryTotals).map(([category, price]) => (
+              <li key={category}>
+                <span>{category}</span>
+                <strong>{price.toLocaleString()}원</strong>
+              </li>
+            ))}
+          </ul>
+        </div>
       )}
 
       <div className="cart-panel__total">
